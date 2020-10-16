@@ -1,17 +1,3 @@
-sudo: required
-language: r
-dist: bionic
-cache: packages
-
-r_packages:
-  - txtplot
-
-r_github_packages:
-  - jimhester/covr
-  - jimhester/lintr
-  - richelbilderbeek/nLTT
-  - ropensci/beautier
-  - ropensci/tracerer
-  - ropensci/beastier
-  - ropensci/mauricer
-  - ropensci/babette
+dist: focal
+script:
+  - npm test
